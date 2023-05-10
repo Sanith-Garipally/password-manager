@@ -1,0 +1,237 @@
+.bg-container {
+  background-color: #9ba9eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.content-container {
+  width: 95%;
+}
+
+/* Logo Container and Logo */
+.logo-container {
+  margin: 30px 0;
+}
+.logo {
+  width: 300px;
+}
+
+/* Form container */
+.pwd-form-container {
+  display: flex;
+  background-color: #5763a5;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.password-form {
+  background-color: #454f84;
+  padding: 25px;
+  border-radius: 20px;
+}
+.pf-head {
+  color: #f8fafc;
+  font-size: 30px;
+  font-weight: 500;
+}
+.form-item {
+  display: flex;
+  align-items: center;
+  background-color: #f8fafc;
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  height: 100px;
+}
+.input-image {
+  width: 35px;
+  height: 35px;
+  margin: 0 20px;
+}
+.input {
+  height: 90%;
+  border: none;
+  border-left: 1px solid #454f84;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5763a5;
+  outline: none;
+}
+.form-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.form-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #0b69ff;
+  color: #fff;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+/* pwd-list-container */
+.pwd-list-container {
+  background-color: #5763a5;
+  border-radius: 20px;
+}
+.pwd-search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.your-pass-container {
+  display: flex;
+  align-items: center;
+}
+.para-pass {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.para-span {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  background: transparent;
+  border: 1px solid #f8fafc;
+  margin-left: 5px;
+  color: #fff;
+}
+.search-box-container {
+  display: flex;
+  align-items: center;
+  background-color: #f8fafc;
+  border: none;
+  height: 40px;
+  width: 50%;
+}
+.search-img {
+  width: 35px;
+  margin: 0 10px;
+}
+.search-input {
+  height: 90%;
+  width: 90%;
+  border: none;
+  border-left: 1px solid #454f84;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5763a5;
+  outline: none;
+}
+
+/* Show password container */
+.sp-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.sp-input {
+  width: 30px;
+  height: 30px;
+}
+.sp-label {
+  font-size: 20px;
+  margin-left: 20px;
+  color: #f8fafc;
+  font-weight: bold;
+}
+
+/* ul list container */
+.ul-pwd-list-container {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.no-pass-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.no-pass-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  /* Form Container */
+  .pwd-form-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+  .lg-pwd-container {
+    display: none;
+  }
+  .pmgr-img {
+    width: 100%;
+  }
+
+  /* pwd-list-container */
+  .pwd-list-container {
+    padding: 25px;
+  }
+  .search-input {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content-container {
+    width: 75%;
+  }
+  /* Form Container */
+  .pwd-form-container {
+    flex-direction: row;
+    padding: 45px;
+    justify-content: space-between;
+  }
+  .sm-pwd-container {
+    display: none;
+  }
+  .lg-pwd-container {
+    display: block;
+    order: 1;
+  }
+  .pmgr-img {
+    width: 90%;
+    max-width: 700px;
+  }
+  .password-form {
+    width: 50%;
+    max-width: 1000px;
+  }
+  /* pwd-list-container */
+  .pwd-list-container {
+    padding: 25px;
+  }
+  .search-input {
+    width: 250px;
+  }
+  .search-box-container {
+    width: 350px;
+  }
+  .form-item {
+    height: 70px;
+  }
+  .no-pass-img {
+    width: 50%;
+  }
+}
